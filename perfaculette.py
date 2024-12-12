@@ -42,4 +42,11 @@ def calculate_cost():
 
             # Results display
             st.subheader("Résultats")
-            st.write(f"Indications sélec
+            st.write(f"Indications sélectionnées : {', '.join(indications)}")
+            st.write(f"Durée du traitement : {duree} jours")
+            st.write(f"Nombre total de perfusions : {total_perfusions}")
+            st.write(f"Tarif unitaire : {tarif_unitaire} €")
+            st.write(f"Coût total : {total_cost:.2f} €")
+
+# Call the form and calculation function
+calculate_cost()
